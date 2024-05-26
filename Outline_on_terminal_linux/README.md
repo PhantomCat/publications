@@ -110,7 +110,7 @@ curl --proxy socks5://127.0.0.1:631 https://ifconfig.me
 
 И, хочу добавить ещё вот что: чтобы сделать быструю команду отключения прокси добавьте alias в свой .bashrc:
 ```bash
-alias unset HTTP_PROXY http_proxy HTTPS_PROXY https_proxy FTP_PROXY ftp_proxy NO_PROXY no_proxy
+alias no-proxy="unset HTTP_PROXY http_proxy HTTPS_PROXY https_proxy FTP_PROXY ftp_proxy NO_PROXY no_proxy"
 ```
 Хотя, можете сделать и 2 скрипта (на включение переменных окружения и на отключение)... Всё в ваших руках, это же GNU/Linux!
 
